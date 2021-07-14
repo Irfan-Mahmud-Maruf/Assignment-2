@@ -1,0 +1,197 @@
+/* Common style */
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+.btn-common {
+  background-color: #e02c6d;
+  color: white;
+  font-size: 16px;
+  padding: 20px 40px;
+  border: 3px solid #e02c6d;
+  transition: 0.5s;
+}
+.btn-common:hover {
+  background: transparent;
+  border: 3px solid white;
+}
+
+/*--------- header-------- */
+header {
+  background-color: #10437a;
+}
+header:hover {
+  background-image: url(images/bg.png);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  box-shadow: inset 0 0 0 2000px rgba(16, 67, 122, 0.7);
+  transition: 0.5s;
+}
+/* nav */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 42px;
+  padding-bottom: 42px;
+}
+.collaps-manu {
+  color: white;
+  display: none;
+}
+.nav-items ul {
+  padding-left: 0;
+}
+.nav-items ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+.nav-items ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  margin-right: 36px;
+  color: white;
+}
+.log-in {
+  padding-right: 10px;
+}
+/* Banner */
+.banner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 50px 0;
+}
+.banner-content {
+  max-width: 500px;
+}
+.banner-content h1 {
+  font-size: 64px;
+  line-height: 80px;
+  color: white;
+  margin-bottom: 27px;
+}
+.banner-img img {
+  width: 100%;
+}
+
+/* Players */
+.players {
+  margin-top: 70px;
+  margin-bottom: 100px;
+}
+.players-group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  row-gap: 27px;
+}
+.card {
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+}
+.player-img {
+  width: 100%;
+  margin-bottom: 16px;
+}
+.player-name {
+  font-size: 28px;
+  line-height: 40px;
+  margin-bottom: 10px;
+  color: #18191f;
+}
+.player-info {
+  color: #6c6c6c;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 13px;
+}git
+
+/* Footer */
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 63px;
+}
+.footer-img{
+ max-width: 483px;
+}
+.social ul{
+  margin: 0;
+  padding: 0;
+}
+.social ul li {
+  list-style-type: none;
+  display: inline-block;
+  
+}
+.social ul li a img{
+  width: 32px;
+  margin 20px 7px
+}
+
+/* -----------
+      media
+------------ */
+/* Phone device */
+
+@media only screen and (max-width : 688px) {
+  .container {
+    width: 322.98px;
+    margin: 0 auto;
+  }
+  .btn-common {
+    
+    font-size: 12px;
+    padding: 7.5px 18px;
+    border: 3px solid #e02c6d;
+    transition: 0.5s;
+  }
+  .banner-content h1 {
+    font-size: 36px;
+    line-height: 50px;
+    margin-bottom: 27px;
+  }
+  .nav-items{
+    display: none;
+  }
+  .collaps-manu{
+    display:block;
+  }
+  .banner {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .banner-content {
+    max-width: 278px;
+  }
+  .banner-img img {
+    width: 100%;
+    margin-top: 50px;
+  }
+  /* Players */
+.players {
+  margin-top: 47px;
+  margin-bottom: 60px;
+}
+.players-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 24px;
+}
+/* Footer */
+.footer-content {
+  margin-bottom: 171px;
+}
+.footer-img{
+ max-width: 271px;
+}
+
+}
+  }
